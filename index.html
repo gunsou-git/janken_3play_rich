@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん（3人対戦）</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1 class="title">3人対戦じゃんけん</h1>
+
+    <!-- じゃんけんのテーブル -->
+    <div class="table">
+
+        <!-- 上段：相手2人 -->
+        <div class="row">
+            <div class="player c">
+                <div class="avatar">🤖</div>
+                <div class="name">相手1</div>
+                <div class="hand">✊</div>
+                <div class="hand-name">－</div>
+                <div class="badge"></div>
+            </div>
+            <div class="player d">
+                <div class="avatar">👾</div>
+                <div class="name">相手2</div>
+                <div class="hand">✊</div>
+                <div class="hand-name">－</div>
+                <div class="badge"></div>
+            </div>
+        </div>
+
+        <!-- 真ん中：掛け声と結果 -->
+        <div class="center">
+            <p class="a">手を選んでね</p>
+        </div>
+
+        <!-- 下段：あなた -->
+        <div class="row">
+            <div class="player you b">
+                <div class="avatar">😎</div>
+                <div class="name">あなた</div>
+                <div class="hand">✊</div>
+                <div class="hand-name">－</div>
+                <div class="badge"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 手を選ぶボタン -->
+    <div class="hands">
+        <button class="aa"><span>✊</span>グー</button>
+        <button class="bb"><span>✌️</span>チョキ</button>
+        <button class="cc"><span>✋</span>パー</button>
+    </div>
+
+    <p class="score">勝ち 0 ／ 負け 0 ／ あいこ 0</p>
+
+    <!-- 必ずJqueryが先 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/test.js"></script>
+</body>
+</html>
